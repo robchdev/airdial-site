@@ -23,3 +23,7 @@ ul { padding-left: 22px; }
 footer { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; border-top: 1px solid var(--line);
   color: var(--soft); font-size: 14px; }
 html[data-lang="en"] [lang="it"], html[data-lang="it"] [lang="en"] { display: none; }
+header .store { display: inline-block; margin-top: 26px; padding: 13px 28px; border-radius: 999px;
+  background: #fff; color: #3d2fae; font-weight: 700; text-decoration: none; box-shadow: 0 8px 22px rgba(20, 10, 70, .28); }
+header .store:hover, header .store:focus-visible { background: #f1edff; }
+header .platforms { margin-top: 12px; font-size: 15px; }
