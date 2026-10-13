@@ -1,0 +1,25 @@
+:root { --ink: #1b1740; --soft: #5b5780; --paper: #fbfaff; --line: #e4e0f5; --accent: #5a3fd6; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #f1eeff; --soft: #a9a4cf; --paper: #131026; --line: #2c2750; --accent: #a996ff; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font: 17px/1.6 ui-rounded, "SF Pro Rounded", -apple-system, system-ui, sans-serif; }
+header { background: linear-gradient(135deg, #2f7bf0, #6a4be0 40%, #d9519f 75%, #f59a4a); color: #fff;
+  padding: 56px 16px 48px; text-align: center; }
+header img { width: 120px; height: 120px; border-radius: 27px; box-shadow: 0 12px 34px rgba(20, 10, 70, .35); }
+header h1 { font-size: 40px; line-height: 1.1; margin: 20px 0 6px; }
+header p { margin: 0; font-size: 19px; opacity: .92; }
+nav { display: flex; flex-wrap: wrap; gap: 6px 22px; justify-content: center; padding: 14px 16px;
+  border-bottom: 1px solid var(--line); }
+a { color: var(--accent); }
+nav a { text-decoration: none; font-weight: 600; }
+nav a:hover, nav a:focus-visible { text-decoration: underline; }
+main { max-width: 680px; margin: 0 auto; padding: 28px 16px 64px; }
+h2 { font-size: 24px; line-height: 1.25; margin: 36px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 4px; }
+p, ul { margin: 0 0 14px; }
+ul { padding-left: 22px; }
+footer { max-width: 680px; margin: 0 auto; padding: 20px 16px 48px; border-top: 1px solid var(--line);
+  color: var(--soft); font-size: 14px; }
+html[data-lang="en"] [lang="it"], html[data-lang="it"] [lang="en"] { display: none; }
