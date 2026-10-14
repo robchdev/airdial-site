@@ -27,3 +27,10 @@ header .store { display: inline-block; margin-top: 26px; padding: 13px 28px; bor
   background: #fff; color: #3d2fae; font-weight: 700; text-decoration: none; box-shadow: 0 8px 22px rgba(20, 10, 70, .28); }
 header .store:hover, header .store:focus-visible { background: #f1edff; }
 header .platforms { margin-top: 12px; font-size: 15px; }
+.shots { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 2px 14px;
+  margin: 0 -16px; padding-left: 16px; padding-right: 16px; }
+.shots img { flex: 0 0 auto; width: 200px; height: auto; border-radius: 24px; scroll-snap-align: start;
+  box-shadow: 0 10px 26px rgba(20, 10, 70, .22); }
+img.mac { display: block; width: 100%; height: auto; margin: 18px 0 8px; border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(20, 10, 70, .22); }
+@media (min-width: 700px) { .shots { justify-content: center; overflow: visible; margin: 0; padding: 4px 0 14px; } }
